@@ -26,8 +26,8 @@ body {
     text-align: center;
     padding: 1em 1em 0;
     overflow-y: scroll;
-    /* height: 100%; */
-    /* scroll-snap-type: y mandatory; */
+    height: 100vh;
+    scroll-snap-type: y mandatory;
 }
 
 section {
@@ -38,12 +38,12 @@ section {
     align-items: center;
     margin-bottom: 10px;
     height: 100vh;
-    /* scroll-snap-align: start; */
+    scroll-snap-align: start;
 }
-/* 
+
 section:first-of-type {
     scroll-margin: 120px;
-} */
+}
 
 button {
     border: none;
