@@ -2,8 +2,6 @@ import React, { useRef } from "react";
 import "./App.css";
 
 const BackToTop = function ({ elementRef }) {
-    console.log("ref", elementRef);
-
     function ScrollToTop() {
         elementRef.current.scrollTo({ behavior: "smooth", top: 0 });
     }
