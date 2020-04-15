@@ -15,7 +15,7 @@ body {
     background: url(https://images.freeimages.com/images/large-previews/d57/space-water-1192081.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow-y: scroll;
+    background-size: cover;
 }
 
 #root {
