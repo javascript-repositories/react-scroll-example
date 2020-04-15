@@ -10,8 +10,8 @@ const BackToTop = function () {
 };
 
 function App() {
-    const refA = useRef(null);
     const refB = useRef(null);
+    const refC = useRef(null);
 
     function scrollToSection(ref) {
         window.scrollTo({ behavior: "smooth", top: ref.current.offsetTop });
@@ -19,16 +19,17 @@ function App() {
 
     return (
         <div className="App">
-            <button onClick={() => scrollToSection(refA)}>Go to section A</button>
             <button onClick={() => scrollToSection(refB)}>Go to section B</button>
+            <button onClick={() => scrollToSection(refC)}>Go to section C</button>
 
-            <section ref={refA} className="a">
-                Section A
-                <BackToTop />
-            </section>
+            <section>Section A</section>
 
             <section ref={refB}>
                 Section B
+                <BackToTop />
+            </section>
+            <section ref={refC}>
+                Section C
                 <BackToTop />
             </section>
         </div>
