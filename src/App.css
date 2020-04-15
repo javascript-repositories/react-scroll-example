@@ -1,0 +1,22 @@
+.App {
+    text-align: center;
+    background: white;
+    padding: 1em;
+}
+
+section {
+    background: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section button {
+    display: block;
+    margin-top: 200px;
+}
+
+section.a {
+    margin-top: 600px;
+    margin-bottom: 500px;
+}
